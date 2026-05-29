@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Familiares / Árbol Genealógico</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+   <style>
+      *,
+      *::before,
+      *::after {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         font-family: 'Roboto', sans-serif;
+         background: #f3f5f8;
+         padding: 24px 32px;
+         min-height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .container {
+         max-width: 1440px;
+         width: 100%;
+         background: #fff;
+         border-radius: 14px;
+         padding: 70px 28px;
+      }
+
+      .layout {
+         display: grid;
+         grid-template-columns: 200px 1fr;
+         gap: 20px;
+         align-items: start;
+      }
+
+      #left-panel {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+      }
+
+      /* STATS */
+      .stat-card {
+         background: #00BD84;
+         border-radius: 10px;
+         padding: 10px 14px;
+         display: flex;
+         gap: 10px;
+         color: #fff;
+         margin: 0 2rem;
+      }
+
+      .stat-card .stat-num {
+         font-size: 22px;
+         font-weight: 900;
+      }
+
+      .stat-card .stat-label {
+         font-size: 12px;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+
+      .stat-card .stat-icon {
+         font-size: 26px;
+         align-content: center;
+      }
+
+      /* TITULAR PRO */
+      .titular-card-pro {
+         background: #e9ecef;
+         border-radius: 16px;
+         padding: 18px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .titular-photo {
+         width: 110px;
+         border-radius: 8px;
+         background: #b0b8c4;
+         overflow: hidden;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .titular-photo img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      .titular-doc-big {
+         font-size: 16px;
+         font-weight: 900;
+         color: #00BD84;
+      }
+
+      .titular-subtitle {
+         font-size: 13px;
+         font-weight: 700;
+         color: #444;
+      }
+
+      .titular-name-big {
+         font-size: 16px;
+         font-weight: 900;
+         color: #1f3b73;
+         text-align: center;
+         text-transform: uppercase;
+         line-height: 1.2;
+      }
+
+      .titular-birth-big {
+         font-size: 14px;
+         font-weight: 900;
+         color: #00BD84;
+         text-align: center;
+      }
+
+      .titular-lbl {
+         font-size: 12px;
+         font-weight: 900;
+         color: #555;
+         margin-top: 6px;
+      }
+
+      .titular-ubigeo-big {
+         font-size: 13px;
+         font-weight: 900;
+         color: #f97316;
+         text-align: center;
+         text-transform: uppercase;
+      }
+
+      #right-panel {
+         display: flex;
+         flex-direction: column;
+         gap: 14px;
+      }
+
+      .brand-header {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 4px;
+         color: #464646;
+         gap: 10px;
+      }
+
+      .brand-header .brand-logo {
+         font-size: 36px;
+      }
+
+      .fam-grid {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 10px;
+      }
+
+      /* FAMILIAR CARD */
+      .fam-card {
+         background: #f2f4f8;
+         border-radius: 10px;
+         padding: 10px;
+         display: flex;
+         gap: 10px;
+      }
+
+      .fam-left {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .fam-photo {
+         width: 75px;
+         background: #b0b8c4;
+         border-radius: 6px;
+         overflow: hidden;
+         min-height: 80px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 0.25rem;
+      }
+
+      .fam-photo img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      .no-foto-wrap {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 3px;
+         width: 100%;
+         padding: 6px;
+      }
+
+      .no-foto-txt {
+         font-size: 8px;
+         color: #fff;
+         text-align: center;
+      }
+
+      .fam-info {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .f-tipo {
+         font-size: 14px;
+         font-weight: 900;
+         color: #14B77A;
+         text-transform: uppercase;
+      }
+
+      .f-lbl {
+         font-size: 10px;
+         font-weight: 700;
+         color: #464646;
+         text-transform: uppercase;
+         margin-top: 7.5px;
+      }
+
+      .f-nombre {
+         font-size: 12px;
+         font-weight: 700;
+         color: #27279C;
+         text-transform: uppercase;
+      }
+
+      .f-edad {
+         font-size: 12px;
+         font-weight: 700;
+         color: #14B77A;
+      }
+
+      .f-genero {
+         font-size: 12px;
+         font-weight: 700;
+         color: #E07B1A;
+      }
+
+      .f-doc {
+         font-size: 12px;
+         font-weight: 900;
+         color: #27279C;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="layout">
+         <div id="left-panel"></div>
+         <div id="right-panel"></div>
+      </div>
+   </div>
+
+   <script>
+      const SVG_SILUETA = `
+        <div class="no-foto-wrap">
+         <svg fill="rgba(255,255,255,0.75)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve">
+         <path d="M50,43v2.2c0,2.6-2.2,4.8-4.8,4.8H6.8C4.2,50,2,47.8,2,45.2V43c0-5.8,6.8-9.4,13.2-12.2
+            c0.2-0.1,0.4-0.2,0.6-0.3c0.5-0.2,1-0.2,1.5,0.1c2.6,1.7,5.5,2.6,8.6,2.6s6.1-1,8.6-2.6c0.5-0.3,1-0.3,1.5-0.1
+            c0.2,0.1,0.4,0.2,0.6,0.3C43.2,33.6,50,37.1,50,43z M26,2c6.6,0,11.9,5.9,11.9,13.2S32.6,28.4,26,28.4s-11.9-5.9-11.9-13.2
+            S19.4,2,26,2z"/>
+         </svg>
+          <div class="no-foto-txt">No hay foto<br>disponible</div>
+        </div>`;
+
+
+      window.renderFromData = function (raw) {
+         const lista = Array.isArray(raw.listaAni) ? raw.listaAni : [];
+         const me = raw.me || {};
+
+         const listaLimitada = lista.slice(0, 16);
+         const totalFamiliares = listaLimitada.length;
+
+         const leftEl = document.getElementById('left-panel');
+         const rightEl = document.getElementById('right-panel');
+
+         const meNombre = [me.preNombres, me.apePaterno, me.apeMaterno].filter(Boolean).join(' ');
+         const meFoto = me.foto ? `<img src="${me.foto}"/>` : SVG_SILUETA;
+         const meDoc = [me.nuDni, me.coDocEmi].filter(Boolean).join(' - ');
+
+         const titularHTML = `
+   <div class="titular-card-pro">
+     <div class="titular-photo">${meFoto}</div>
+     <div class="titular-doc-big">${meDoc || '—'}</div>
+     <div class="titular-subtitle">🪪 Identificación</div>
+     <div class="titular-name-big">${meNombre || '—'}</div>
+     <div class="titular-birth-big">
+       ${me.feNacimiento || '—'} - ${me.nuEdad ? me.nuEdad + ' AÑOS' : ''}
+     </div>
+     <div class="titular-lbl">UBIGEO</div>
+     <div class="titular-ubigeo-big">
+       ${(me.departamento || '').toUpperCase()} /
+       ${(me.provincia || '').toUpperCase()} /
+       ${(me.distrito || '').toUpperCase()}
+     </div>
+   </div>`;
+
+         const statsHTML = `
+   <div class="stat-card">
+   <div class="stat-icon">👨‍👩‍👧‍👦</div>
+   <div>
+      <div class="stat-num">${totalFamiliares}</div>
+      <div class="stat-label">Total de Familiares</div>
+   </div>
+   </div>`;
+
+         const headerHTML = `
+   <div class="brand-header">
+     <span class="brand-logo">👨‍👩‍👧‍👦</span>
+     <h4>Familiares /<br>Árbol Genealógico</h4>
+   </div>`;
+
+         leftEl.innerHTML = headerHTML + titularHTML + statsHTML;
+         rightEl.innerHTML = '';
+
+         const grid = document.createElement('div');
+         grid.className = 'fam-grid';
+
+         listaLimitada.forEach(p => {
+            const nombre = p.NOMBRE_COMPLETO || [p.NOMBRES, p.APELLIDOS].filter(Boolean).join(' ');
+            const fotoHTML = p.foto ? `<img src="${p.foto}"/>` : SVG_SILUETA;
+
+            const card = document.createElement('div');
+            card.className = 'fam-card';
+
+            card.innerHTML = `
+      <div class="fam-left">
+        <div class="fam-photo">${fotoHTML}</div>
+        <div class="f-lbl">DOCUMENTO</div>
+        <div class="f-doc">${p.DNI || '—'}</div>
+      </div>
+
+      <div class="fam-info">
+        <div class="f-tipo">${p.TIPO || '—'}</div>
+
+        <div class="f-lbl">NOMBRES Y APELLIDOS</div>
+        <div class="f-nombre">${nombre}</div>
+
+        <div class="f-lbl">EDAD</div>
+        <div class="f-edad">${p.EDAD ? p.EDAD + ' AÑOS' : '—'}</div>
+
+        <div class="f-lbl">GENERO</div>
+        <div class="f-genero">${p.GENERO || '—'}</div>
+      </div>`;
+
+            grid.appendChild(card);
+         });
+
+         rightEl.appendChild(grid);
+      };
+
+      async function init() {
+         try {
+            const [meRes, hogarRes] = await Promise.all([
+               fetch('../test/reniec.json'),
+               fetch('../test/familia.json')
+            ]);
+
+            if (!meRes.ok) throw new Error(`reniec.json → HTTP ${meRes.status}`);
+            if (!hogarRes.ok) throw new Error(`familia.json → HTTP ${hogarRes.status}`);
+
+            const meJson = await meRes.json();
+            const familiaJson = await hogarRes.json();
+
+            familiaJson.me = Array.isArray(meJson.listaAni) ? meJson.listaAni[0] : meJson.listaAni;
+
+            const fotoRaw = familiaJson.me?.foto || meJson.foto || null;
+            if (fotoRaw) {
+               familiaJson.me.foto = fotoRaw.startsWith('data:')
+                  ? fotoRaw
+                  : `data:image/jpeg;base64,${fotoRaw}`;
+            }
+
+            renderFromData(familiaJson);
+         } catch (err) {
+            document.getElementById('left-panel').innerHTML =
+               `<p style="color:#c00;padding:16px">Error: ${err.message}</p>`;
+         }
+      }
+
+      init();
+   </script>
+
+</body>
+
+</html>

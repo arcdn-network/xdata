@@ -1,0 +1,96 @@
+{
+  "developer": "https://t.me/IngLuisRojas_Oficial",
+  "fuente": "servicio hogares",
+  "listaAni": {
+    "documento_consultado": "90295799",
+    "hogar": {
+      "apellido_casada_titular": "",
+      "apellido_materno_titular": "NUÑEZ",
+      "apellido_paterno_titular": "CAMPOS",
+      "clasificacion_socioeconomica": {
+        "area": "URBANO",
+        "clasificacion": "POBRE EXTREMO",
+        "estado": "CADUCADO",
+        "fecha_fin_vigencia": "04/09/2023",
+        "fecha_inicio_vigencia": "04/09/2019",
+        "nro_formato": "16907972"
+      },
+      "codigo_cse": "24514251",
+      "codigo_hogar": "10573947",
+      "consulta_realizada": "90295799",
+      "documento_titular": "90295799",
+      "empadronamiento": {
+        "centro_poblado": "VITARTE",
+        "codigo_centro_poblado": "0001",
+        "departamento": "LIMA",
+        "direccion": "OTRO SN  NRO: SN PISO: 1 MZN: A LOTE: 010",
+        "distrito": "ATE",
+        "nucleo_urbano": "AA HH LOS LIBERTADORES",
+        "provincia": "LIMA",
+        "referencia": "",
+        "tipo_carga": "FSU-2013",
+        "ubigeo": "150103"
+      },
+      "fecha_empadronamiento": "03/09/2019",
+      "fecha_nacimiento_titular": "31/12/2004",
+      "fuente": "ULF",
+      "hogar_estado": "HOGAR SIN RESTRICCION",
+      "integrantes": [
+        {
+          "apellido_casada": "",
+          "apellido_materno": "NUÑEZ",
+          "apellido_paterno": "CAMPOS",
+          "documento": "63091105",
+          "fecha_nacimiento": "22/11/2001",
+          "genero": "MASCULINO",
+          "nombres": "LUIS",
+          "numero": "1",
+          "tipo_documento": "DNI"
+        },
+        {
+          "apellido_casada": "",
+          "apellido_materno": "VILCAPOMA",
+          "apellido_paterno": "NUÑEZ",
+          "documento": "80147747",
+          "fecha_nacimiento": "12/04/1976",
+          "genero": "FEMENINO",
+          "nombres": "CLOTILDE ROBERTA",
+          "numero": "2",
+          "tipo_documento": "DNI"
+        },
+        {
+          "apellido_casada": "",
+          "apellido_materno": "NUÑEZ",
+          "apellido_paterno": "CAMPOS",
+          "documento": "62575983",
+          "fecha_nacimiento": "04/09/2008",
+          "genero": "MASCULINO",
+          "nombres": "JHONATAN",
+          "numero": "3",
+          "tipo_documento": "DNI"
+        },
+        {
+          "apellido_casada": "",
+          "apellido_materno": "NUÑEZ",
+          "apellido_paterno": "CAMPOS",
+          "documento": "90295799",
+          "fecha_nacimiento": "31/12/2004",
+          "genero": "MASCULINO",
+          "nombres": "JULIO MATÍAS",
+          "numero": "4",
+          "tipo_documento": "DNI"
+        }
+      ],
+      "nombres_titular": "JULIO MATÍAS",
+      "sexo_titular": "MASCULINO",
+      "total_integrantes": 4
+    },
+    "metadata": {
+      "estado_consulta": "ENCONTRADO",
+      "fuente": "Padrón General de Hogares"
+    },
+    "tipo_consulta": "DNI"
+  },
+  "mensaje": "Información del hogar encontrada exitosamente",
+  "status": "success"
+}

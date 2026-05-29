@@ -1,0 +1,169 @@
+{
+  "developer": "https://t.me/IngLuisRojas_Oficial",
+  "fuente": "servicio arbol genealogico",
+  "listaAni": [
+    {
+      "APELLIDOS": "NUÑEZ VILCAPOMA",
+      "DNI": "80147747",
+      "EDAD": "49",
+      "GENERO": "FEMENINO",
+      "NOMBRES": "CLOTILDE ROBERTA",
+      "NOMBRE_COMPLETO": "CLOTILDE ROBERTA NUÑEZ VILCAPOMA",
+      "TIPO": "MADRE",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS VILLAR",
+      "DNI": "15422749",
+      "EDAD": "55",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "LUIS ALBERTO",
+      "NOMBRE_COMPLETO": "LUIS ALBERTO CAMPOS VILLAR",
+      "TIPO": "PADRE",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS NUÑEZ",
+      "DNI": "63091105",
+      "EDAD": "23",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "LUIS",
+      "NOMBRE_COMPLETO": "LUIS CAMPOS NUÑEZ",
+      "TIPO": "HERMANO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "YATACO NUÑEZ",
+      "DNI": "77198850",
+      "EDAD": "30",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "LUIS ENRIQUE",
+      "NOMBRE_COMPLETO": "LUIS ENRIQUE YATACO NUÑEZ",
+      "TIPO": "HERMANO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS APAICO",
+      "DNI": "73831976",
+      "EDAD": "26",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "LUIS ALBERTO",
+      "NOMBRE_COMPLETO": "LUIS ALBERTO CAMPOS APAICO",
+      "TIPO": "HERMANO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS GUTIERREZ",
+      "DNI": "62588813",
+      "EDAD": "24",
+      "GENERO": "FEMENINO",
+      "NOMBRES": "MILAGROS",
+      "NOMBRE_COMPLETO": "MILAGROS CAMPOS GUTIERREZ",
+      "TIPO": "HERMANO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS APAICO",
+      "DNI": "79133133",
+      "EDAD": "11",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "MARIO ERNESTO",
+      "NOMBRE_COMPLETO": "MARIO ERNESTO CAMPOS APAICO",
+      "TIPO": "HERMANO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS APAICO",
+      "DNI": "61315548",
+      "EDAD": "21",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "JOSE JAVIER",
+      "NOMBRE_COMPLETO": "JOSE JAVIER CAMPOS APAICO",
+      "TIPO": "HERMANO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "VILCAPOMA SAPAICO",
+      "DNI": "06578583",
+      "EDAD": "68",
+      "GENERO": "FEMENINO",
+      "NOMBRES": "MARIA OCTAVIA",
+      "NOMBRE_COMPLETO": "MARIA OCTAVIA VILCAPOMA SAPAICO",
+      "TIPO": "ABUELA MATERNA",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "NUÑEZ SALINAS",
+      "DNI": "08764281",
+      "EDAD": "65",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "RAUL ENRIQUE",
+      "NOMBRE_COMPLETO": "RAUL ENRIQUE NUÑEZ SALINAS",
+      "TIPO": "ABUELO MATERNO",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "VILLAR REYES",
+      "DNI": "15412069",
+      "EDAD": "89",
+      "GENERO": "FEMENINO",
+      "NOMBRES": "LUISA",
+      "NOMBRE_COMPLETO": "LUISA VILLAR REYES",
+      "TIPO": "ABUELA PATERNA",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS VALENZUELA",
+      "DNI": "06609449",
+      "EDAD": "98",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "MARIO POMPILIO",
+      "NOMBRE_COMPLETO": "MARIO POMPILIO CAMPOS VALENZUELA",
+      "TIPO": "ABUELO PATERNO",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "NUÑEZ VILCAPOMA",
+      "DNI": "40627007",
+      "EDAD": "45",
+      "GENERO": "FEMENINO",
+      "NOMBRES": "MARIBEL",
+      "NOMBRE_COMPLETO": "MARIBEL NUÑEZ VILCAPOMA",
+      "TIPO": "TIO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS VILLAR",
+      "DNI": "15430209",
+      "EDAD": "52",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "MARIO ERNESTO",
+      "NOMBRE_COMPLETO": "MARIO ERNESTO CAMPOS VILLAR",
+      "TIPO": "TIO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "CAMPOS VILLAR",
+      "DNI": "15420923",
+      "EDAD": "58",
+      "GENERO": "FEMENINO",
+      "NOMBRES": "ISIDORA ROSARIO",
+      "NOMBRE_COMPLETO": "ISIDORA ROSARIO CAMPOS VILLAR",
+      "TIPO": "TIO(A)",
+      "VERIFICACION": "ALTA"
+    },
+    {
+      "APELLIDOS": "YATACO SANTOS",
+      "DNI": 90900691,
+      "EDAD": "4",
+      "GENERO": "MASCULINO",
+      "NOMBRES": "DRAKE DAYIRO",
+      "NOMBRE_COMPLETO": "DRAKE DAYIRO YATACO SANTOS",
+      "TIPO": "SOBRINO(A)",
+      "VERIFICACION": "ALTA"
+    }
+  ],
+  "mensaje": "Consulta exitosa",
+  "status": "success",
+  "total_registros": 16
+}

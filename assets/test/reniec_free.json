@@ -1,0 +1,27 @@
+{
+  "developer": "https://t.me/IngLuisRojas_Oficial",
+  "fuente": "reniec free",
+  "listaAni": {
+    "apellido_materno": "ARANDA",
+    "apellido_paterno": "CHINININ",
+    "credito": "100",
+    "departamento": "CAJAMARCA",
+    "digito_verificador": "1",
+    "direccion": "CASERIO NUEVA ESPERANZA",
+    "distrito": "SAN IGNACIO",
+    "documento": "70805466",
+    "edad_actual": 27,
+    "estado_civil": "SOLTERO",
+    "fecha_nacimiento": "19/12/1998",
+    "nombre_madre": "ELSA MARILU",
+    "nombre_padre": "MARIO ALFREDO",
+    "nombres": "LUIS ALFREDO",
+    "provincia": "SAN IGNACIO",
+    "sexo": "MASULINO",
+    "sueldo": "S/. 0",
+    "ubicacion": "CAJAMARCA-SAN IGNACIO-SAN IGNACIO",
+    "ubigeo": "190501"
+  },
+  "mensaje": "Consulta exitosa",
+  "status": "success"
+}

@@ -1,0 +1,44 @@
+{
+  "developer": "https://t.me/IngLuisRojas_Oficial",
+  "fuente": "servicio OSIPTEL",
+  "listaAni": {
+    "estadisticas": {
+      "lineas_por_operador": {
+        "ENTEL PERU S.A.": 1
+      },
+      "operadores": ["ENTEL PERU S.A."],
+      "tipos_linea": ["POSTPAGO"],
+      "total_operadores": 1,
+      "total_tipos_linea": 1
+    },
+    "lineas": [
+      {
+        "apellido_materno": "RAEZ",
+        "apellido_paterno": "VILCAHUAMAN",
+        "apellidos": "VILCAHUAMAN RAEZ",
+        "correo": "mishelledelarosa246@gmail.com",
+        "documento": "07522924",
+        "fecha_activacion": "03/03/2019 00:00:00",
+        "fecha_empresa": "01/02/2025 10:25:23",
+        "nombres": "JULIO ALFREDO",
+        "nombres_completos": "JULIO ALFREDO VILCAHUAMAN RAEZ",
+        "numero_telefonico": "970441058",
+        "operador": "ENTEL PERU S.A.",
+        "plan": "Entel Chip 48.90 Plus",
+        "razon_social": "",
+        "tipo_linea": "POSTPAGO"
+      }
+    ],
+    "metadata": {
+      "fuente": "OSIPTEL - Organismo Supervisor de Inversión Privada en Telecomunicaciones",
+      "incluye_correo": true,
+      "incluye_razon_social": false,
+      "parametro_consulta": "numero"
+    },
+    "tipo_consulta": "TELEFONO",
+    "total_lineas": 1,
+    "valor_consultado": "970441058"
+  },
+  "mensaje": "Se encontraron 1 línea(s) registrada(s)",
+  "status": "success"
+}

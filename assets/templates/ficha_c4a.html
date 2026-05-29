@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ficha C4A</title>
+   <link href="https://cdn.jsdelivr.net/npm/roboto-font@0.1.0/css/fonts.min.css" rel="stylesheet">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      html,
+      body {
+         width: 100%;
+         min-height: 100vh;
+         background: #d6d6d6;
+         font-family: 'Roboto', sans-serif;
+         font-size: 11px;
+         color: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         padding: 24px 0 40px;
+      }
+
+      .page {
+         width: 960px;
+         min-height: 1240px;
+         background-image: url('../images/ficha_c4a.png');
+         background-size: 960px 1240px;
+         background-repeat: no-repeat;
+         background-position: top left;
+         background-color: #fff;
+         padding: 14mm 14mm 10mm 14mm;
+         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.28);
+         display: flex;
+         flex-direction: column;
+         position: relative;
+      }
+
+      .page-body {
+         flex: 1;
+      }
+
+      /* ── HEADER ── */
+      .header {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-end;
+         margin: 0 25mm 12px;
+         border-bottom: 2px solid #29C4C7;
+      }
+
+      /* Título con línea bottom igual a la imagen */
+      .header-titulo {
+         font-size: 16px;
+         font-weight: bold;
+         color: #29C4C7;
+         letter-spacing: 0.3px;
+         padding-bottom: 1rem;
+         flex: 1;
+         margin-right: 16px;
+      }
+
+      .header img.logo {
+         width: 150px;
+         margin-bottom: 1rem;
+      }
+
+      /* ── MAIN ── */
+      .main {
+         display: flex;
+         flex-direction: row;
+         padding: 0 25mm;
+         margin-top: 1rem;
+         gap: 16px;
+      }
+
+      .col-datos {
+         flex: 1;
+      }
+
+      .col-bio {
+         width: 210px;
+         flex-shrink: 0;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 30px;
+      }
+
+      /* ── FILAS ── */
+      .fila {
+         display: flex;
+         padding: 6px 0;
+      }
+
+      .etiqueta {
+         font-size: 14px;
+         min-width: 150px;
+         width: 150px;
+         flex-shrink: 0;
+         color: #fff;
+      }
+
+      .valor {
+         font-size: 14px;
+         padding-left: 8px;
+         color: #E1D4B1;
+         font-weight: bold;
+         align-content: end;
+      }
+
+      .grupo-titulo {
+         font-weight: bold;
+         font-size: 14px;
+         color: #fff;
+         margin: 20px 0 2px 0;
+      }
+
+      .fila-indent {
+         display: flex;
+         padding: 2px 0;
+         padding-left: 16px;
+      }
+
+      .fila-indent .etiqueta {
+         min-width: 134px;
+         width: 134px;
+      }
+
+      /* ── COL BIO ── */
+      .bio-item {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         margin-top: 1rem;
+      }
+
+      .bio-label {
+         font-size: 12px;
+         font-weight: bold;
+         color: #fff;
+         margin-bottom: 0.25rem;
+         text-align: center;
+      }
+
+      .bio-label-sub {
+         font-size: 11px;
+         color: #fff;
+         margin-top: 3px;
+         text-align: center;
+      }
+
+      .bio-box {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         overflow: hidden;
+      }
+
+      .bio-box img {
+         display: block;
+         max-width: 100%;
+         max-height: 100%;
+         object-fit: contain;
+      }
+
+      .box-foto {
+         width: 120px;
+         height: 168px;
+      }
+
+      .box-firma {
+         background: #fff;
+         width: 120px;
+         height: 70px;
+      }
+
+      .box-huella {
+         background: #fff;
+         width: 120px;
+         height: 135px;
+      }
+
+      .bio-firma {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 2rem;
+      }
+
+      /* ── DATOS ADICIONALES ── */
+      .adicionales-wrapper {
+         padding: 0 20mm 0;
+         margin-bottom: 55px;
+      }
+
+      /* Título con línea bottom — mismo estilo que Datos del Ciudadano */
+      .adicionales-titulo {
+         font-size: 16px;
+         font-weight: bold;
+         color: #29C4C7;
+         padding-bottom: 4px;
+         margin-bottom: 16px;
+         border-bottom: 2px solid #29C4C7;
+      }
+
+      /* Contenedor relativo para la marca de agua */
+      .adicionales-inner {
+         position: relative;
+         overflow: hidden;
+         min-height: 100px;
+         padding-left: 1rem;
+         padding-right: 1rem;
+         background: rgb(101 128 175 / 35%)
+      }
+
+      .adicionales-fila {
+         display: flex;
+         padding: 4px 0;
+         position: relative;
+         z-index: 1;
+      }
+
+      .adicionales-label {
+         font-weight: bold;
+         font-size: 14px;
+         min-width: 150px;
+         width: 150px;
+         flex-shrink: 0;
+         color: #fff;
+      }
+
+      .adicionales-valor {
+         font-size: 14px;
+         padding-left: 8px;
+         color: #E1D4B1;
+         font-weight: bold;
+
+      }
+
+      /* ── ESTADO ── */
+      #estado {
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background: rgba(0, 0, 0, 0.75);
+         color: #fff;
+         padding: 14px 28px;
+         border-radius: 8px;
+         font-size: 16px;
+         z-index: 999;
+         display: none;
+      }
+
+      @media print {
+
+         html,
+         body {
+            background: #fff;
+            padding: 0;
+         }
+
+         .page {
+            box-shadow: none;
+            margin: 0;
+            padding: 10mm;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+         }
+
+         #estado {
+            display: none !important;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <div id="estado">Cargando datos...</div>
+
+   <div class="page">
+
+      <div class="page-body">
+
+         <!-- HEADER -->
+         <div class="header">
+            <div class="header-titulo">Datos del Ciudadano</div>
+            <img class="logo" src="../images/logo_reniec.png" alt="RENIEC">
+         </div>
+
+         <!-- MAIN -->
+         <div class="main">
+            <div class="col-datos" id="col-datos"></div>
+
+            <div class="col-bio">
+               <div class="bio-item">
+                  <div class="bio-label">Foto del Ciudadano</div>
+                  <div class="bio-box box-foto"><img id="img-foto" src="" alt="Foto"></div>
+                  <div class="bio-label-sub">(+) Aumentar</div>
+               </div>
+               <div class="bio-item">
+                  <div class="bio-label">Firma del Ciudadano</div>
+                  <div class="bio-box box-firma"><img id="img-firma" src="" alt="Firma"></div>
+                  <div class="bio-label-sub">(+) Aumentar</div>
+               </div>
+               <div class="bio-item">
+                  <div class="bio-firma">
+                     <div class="bio-label">Impresión Dactilar Izquierda</div>
+                     <div class="bio-box box-huella"><img id="img-hizquierda" src="" alt="Huella Izquierda"></div>
+                  </div>
+                  <div class="bio-firma">
+                     <div class="bio-label">Impresión Dactilar Derecha</div>
+                     <div class="bio-box box-huella"><img id="img-hderecha" src="" alt="Huella Derecha"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div><!-- /page-body -->
+
+      <!-- DATOS ADICIONALES -->
+      <div class="adicionales-wrapper">
+
+         <!-- Título con línea bottom igual a "Datos del Ciudadano" -->
+         <div class="adicionales-titulo">Datos adicionales</div>
+
+         <!-- Contenedor con marca de agua SVG (patrón fingerprint + SCAM como en la imagen) -->
+         <div class="adicionales-inner">
+            <div id="adicionales"></div>
+         </div>
+      </div>
+
+   </div><!-- /page -->
+
+   <script>
+      function setImg(id, b64, mime) {
+         if (!b64) return;
+         document.getElementById(id).src =
+            b64.startsWith("data:") ? b64 : `data:${mime};base64,${b64}`;
+      }
+
+      function addFila(container, lbl, val, indent) {
+         const row = document.createElement("div");
+         row.className = indent ? "fila-indent" : "fila";
+         row.innerHTML = `<span class="etiqueta">${lbl}</span><span class="valor">${val}</span>`;
+         container.appendChild(row);
+      }
+
+      function addTitulo(container, texto) {
+         const t = document.createElement("div");
+         t.className = "grupo-titulo";
+         t.textContent = texto;
+         container.appendChild(t);
+      }
+
+      function render(raw) {
+         const d = Array.isArray(raw.listaAni) ? raw.listaAni[0] : raw.listaAni;
+         const col = document.getElementById("col-datos");
+
+         addFila(col, "Código Único de Identificación:", `${d.nuDni}-${d.digitoVerificacion}`);
+         addFila(col, "Primer Apellido:", d.apePaterno);
+         addFila(col, "Segundo Apellido:", d.apeMaterno);
+         addFila(col, "Prenombres:", d.preNombres);
+         addFila(col, "Sexo:", d.sexo);
+
+         addTitulo(col, "Nacimiento");
+         addFila(col, "Fecha:", d.feNacimiento, true);
+         addFila(col, "Departamento:", d.departamento, true);
+         addFila(col, "Provincia:", d.provincia, true);
+         addFila(col, "Distrito:", d.distrito, true);
+
+         addFila(col, "Grado de Instrucción:", d.gradoInstruccion);
+         addFila(col, "Estado Civil:", d.estadoCivil);
+         addFila(col, "Estatura:", d.estatura);
+         addFila(col, "Fecha de Inscripción:", d.feInscripcion);
+         addFila(col, "Nombre del Padre:", d.nomPadre || "-");
+         addFila(col, "Nombre de la Madre:", d.nomMadre || "-");
+         addFila(col, "Fecha de Emisión:", d.feEmision);
+         addFila(col, "Restricción:", d.deRestriccion);
+
+         addTitulo(col, "Domicilio");
+         addFila(col, "Departamento:", d.depaDireccion, true);
+         addFila(col, "Provincia:", d.provDireccion, true);
+         addFila(col, "Distrito:", d.distDireccion, true);
+         addFila(col, "Dirección:", d.desDireccion, true);
+
+         setImg("img-foto", raw.foto, "image/jpeg");
+         setImg("img-firma", raw.firma, "image/png");
+         setImg("img-hizquierda", raw.hizquierda, "image/png");
+         setImg("img-hderecha", raw.hderecha, "image/png");
+
+         const secAd = document.getElementById("adicionales");
+         [
+            ["Fecha de Caducidad:", d.feCaducidad],
+            ["Donación de Órganos:", d.donaOrganos || "NO"],
+            ["Glosa Informativa:", "-"],
+            ["Observación:", d.observacion || "SIN OBSERVACIONES"],
+         ].forEach(([lbl, val]) => {
+            const row = document.createElement("div");
+            row.className = "adicionales-fila";
+            row.innerHTML = `<span class="adicionales-label">${lbl}</span><span class="adicionales-valor">${val}</span>`;
+            secAd.appendChild(row);
+         });
+      }
+
+      window.renderFromData = async function (raw) {
+         document.getElementById('estado').style.display = 'none';
+         render(raw);
+      };
+
+      document.addEventListener('DOMContentLoaded', () => {
+         fetch("../test/reniec.json")
+            .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+            .then(raw => window.renderFromData(raw))
+            .catch(err => {
+               const el = document.getElementById("estado");
+               el.textContent = "❌ No se pudo cargar reniec.json — " + err.message;
+               el.style.display = "block";
+            });
+      });
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CERTIFICADO</title>
+   <style>
+      body {
+         margin: 0;
+         background: #1e1e1e;
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         font-family: Arial, sans-serif;
+         font-size: 16px;
+         min-height: 100vh;
+         box-sizing: border-box;
+      }
+
+      .page {
+         width: 960px;
+         position: relative;
+         height: calc(960px * 5846 / 4134);
+         background: url('../images/antecedentes/policiales.png') no-repeat center/100% 100%;
+         background-color: #fff;
+      }
+
+      .text-red {
+         color: rgba(223, 86, 86, 0.45);
+         padding-bottom: 1rem;
+         font-size: 10px !important;
+      }
+
+      .bloque {
+         position: absolute;
+         white-space: pre;
+         color: #000;
+      }
+
+      #b-codigo {
+         top: 0.6%;
+         left: 78.5%
+      }
+
+      #b-numeracion {
+         top: 4%;
+         left: 5.5%;
+         writing-mode: vertical-rl;
+         text-orientation: mixed;
+         transform: rotate(180deg);
+         letter-spacing: 2px;
+      }
+
+      #foto-container {
+         position: absolute;
+         top: 28.7%;
+         left: 12.4%;
+         width: 17.5%;
+         height: 16.9%;
+         overflow: hidden;
+      }
+
+      #foto-container img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      #foto-watermark {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         pointer-events: none;
+         z-index: 2;
+      }
+
+      #foto-watermark .wm-vertical {
+         position: absolute;
+         right: .5px;
+         top: 0;
+         height: 100%;
+         width: 14px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         writing-mode: vertical-rl;
+         text-orientation: mixed;
+         transform: rotate(180deg);
+         white-space: nowrap;
+         font-size: 9px;
+         font-weight: 100;
+         color: rgb(112 112 112 / 45%);
+         letter-spacing: 1px;
+      }
+
+      #foto-watermark .wm-bottom-left {
+         position: absolute;
+         bottom: 4px;
+         left: 4px;
+         font-size: 10px;
+         font-weight: 600;
+         color: rgba(0, 0, 0, 0.35);
+      }
+
+      #foto-watermark .wm-bottom-right {
+         position: absolute;
+         bottom: 4px;
+         right: 4px;
+         font-size: 10px;
+         font-weight: 600;
+         color: rgba(0, 0, 0, 0.35);
+      }
+
+      #b-fecha-1 {
+         top: 53.7%;
+         left: 19.55%;
+         font-size: 11px;
+         font-weight: 600;
+      }
+
+      #b-fecha-2 {
+         top: 79.6%;
+         left: 9%;
+      }
+
+      #b-datos {
+         top: 29.6%;
+         left: 61.85%;
+         line-height: 2.7;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="page">
+      <div id="b-codigo" class="bloque"></div>
+      <div id="b-numeracion" class="bloque"></div>
+      <div id="foto-container">
+         <img id="img-foto" src="" alt="foto">
+         <div id="foto-watermark">
+            <div class="wm-vertical" id="wm-vertical"></div>
+            <div class="wm-bottom-left" id="wm-bottom-left"></div>
+            <div class="wm-bottom-right" id="wm-bottom-right"></div>
+         </div>
+      </div>
+      <div id="b-fecha-1" class="bloque"></div>
+      <div id="b-datos" class="bloque"></div>
+      <div id="b-fecha-2" class="bloque"></div>
+   </div>
+
+   <script>
+      function randomBase64Code() {
+         const chars = 'ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghjklmnopqrstuvwxyz0123456789';
+         let raw = '';
+         for (let i = 0; i < 9; i++) raw += chars[Math.floor(Math.random() * chars.length)];
+         const b64 = btoa(raw);
+         return b64.endsWith('==') ? b64 : b64.endsWith('=') ? b64 : b64 + '=';
+      }
+
+      function randomNumeration() {
+         const cuerpo = Math.floor(Math.random() * 9999999).toString().padStart(7, '0');
+         return '000' + cuerpo;
+      }
+
+
+      function fecha1() {
+         const f = new Date();
+         const pad = n => n.toString().padStart(2, '0');
+         return `${pad(f.getHours())}:${pad(f.getMinutes())}:${pad(f.getSeconds())} ${pad(f.getDate())}/${pad(f.getMonth() + 1)}/${f.getFullYear()}-0500`;
+      }
+
+      function fecha2() {
+         const meses = ['ENERO', 'FEBRERO', 'MARZO', 'ABRIL', 'MAYO', 'JUNIO',
+            'JULIO', 'AGOSTO', 'SEPTIEMBRE', 'OCTUBRE', 'NOVIEMBRE', 'DICIEMBRE'];
+         const f = new Date();
+         return `${f.getDate()} ${meses[f.getMonth()]} DEL ${f.getFullYear()}`;
+      }
+
+      window.renderFromData = function (raw) {
+         if (!raw) return;
+         const d = Array.isArray(raw.listaAni) ? raw.listaAni[0] : raw.listaAni;
+         const num = randomNumeration();
+
+         document.getElementById('b-codigo').textContent = randomBase64Code();
+         document.getElementById('b-numeracion').textContent = num;
+         document.getElementById('b-fecha-1').textContent = fecha1();
+         document.getElementById('b-fecha-2').textContent = fecha2();
+
+         document.getElementById('b-datos').textContent = [
+            d.nuDni ?? '',
+            d.apePaterno ?? '',
+            d.apeMaterno ?? '',
+            d.preNombres ?? '',
+            d.pais ?? 'PERU',
+            num
+         ].join('\n');
+
+         const fechaCorta = fecha1().slice(0, 19);
+         document.getElementById('wm-vertical').innerHTML =
+            `<span class="text-red">${d.nuDni ?? ''}</span><span>${fechaCorta}</span>`;
+         document.getElementById('wm-bottom-left').textContent = `RENIEC@${new Date().getFullYear()}`;
+         document.getElementById('wm-bottom-right').textContent = 'PNP';
+
+         const foto = document.getElementById('img-foto');
+         if (raw.foto) {
+            foto.src = raw.foto.startsWith('data:') ? raw.foto : `data:image/jpeg;base64,${raw.foto}`;
+         }
+      };
+
+      async function init() {
+         try {
+            const res = await fetch("../test/reniec.json");
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            renderFromData(data);
+         } catch (err) {
+            console.error(err);
+         }
+      }
+
+      init();
+   </script>
+
+</body>
+
+</html>

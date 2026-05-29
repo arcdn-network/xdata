@@ -1,0 +1,49 @@
+{
+  "developer": "https://t.me/IngLuisRojas_Oficial",
+  "fuente": "servicio vehicular",
+  "listaAni": {
+    "placa": "BNG280",
+    "propietarios": [
+      {
+        "direccion": "MZ K LT 23 URB VILLA UNIVERSITARIA - LOS OLIVOS - LIMA - LIMA",
+        "documento": "80362119",
+        "fecha_propiedad": "09/12/2019",
+        "nombre": "FLORES HERRERA EDITH",
+        "tipo_documento": "DNI",
+        "tipo_persona": "PERSONA NATURAL"
+      }
+    ],
+    "vehiculo": {
+      "anio_fabricacion": "2020",
+      "anio_modelo": "2020",
+      "asientos": "8",
+      "categoria": "M1",
+      "cilindros": "4",
+      "color": "BLANCO",
+      "combustible": "BI-COMBUSTIBLE GLP",
+      "dimensiones": {
+        "alto": "1.91 mt",
+        "ancho": "1.56 mt",
+        "largo": "4.07 mt"
+      },
+      "inscripcion": "09/12/2019",
+      "marca": "DFSK",
+      "modelo": "K07S",
+      "motor": "DK12H019477470",
+      "oficina": "LIMA",
+      "partida": "54185960",
+      "pasajeros": "7",
+      "peso_bruto": "1.990 tn",
+      "peso_seco": "1.030 tn",
+      "placa": "BNG280",
+      "potencia": "6586000",
+      "serie": "LVZZ42F91LAA04013",
+      "tipo_vehiculo": "MULTIPRÓSITO",
+      "uso": "Vehiculos Particulares",
+      "version": "",
+      "vin": "LVZZ42F91LAA04013"
+    }
+  },
+  "mensaje": "Consulta vehicular exitosa",
+  "status": "success"
+}

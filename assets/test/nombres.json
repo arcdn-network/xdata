@@ -1,0 +1,965 @@
+{
+  "criterios_busqueda": {
+    "apellido_materno": null,
+    "apellido_paterno": "pal",
+    "nombres": "rony"
+  },
+  "developer": "https://t.me/IngLuisRojas_Oficial",
+  "fuente": "servicio busqueda personas",
+  "listaAni": [
+    {
+      "apellido_materno": "BENAVIDEZ",
+      "apellido_paterno": "PALACIO",
+      "dni": "62219128",
+      "dni_valido": true,
+      "edad": 32,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALACIO BENAVIDEZ",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "AVENDAÑO",
+      "apellido_paterno": "PALACIOS",
+      "dni": "02897776",
+      "dni_valido": true,
+      "edad": 52,
+      "informacion_completa": true,
+      "nombre_completo": "RONY LUIS PALACIOS AVENDAÑO",
+      "nombres": "RONY LUIS"
+    },
+    {
+      "apellido_materno": "ZACARIAS",
+      "apellido_paterno": "PALACIOS",
+      "dni": "10260884",
+      "dni_valido": true,
+      "edad": 63,
+      "informacion_completa": true,
+      "nombre_completo": "RONY GUSTAVO PALACIOS ZACARIAS",
+      "nombres": "RONY GUSTAVO"
+    },
+    {
+      "apellido_materno": "ZACARIAS",
+      "apellido_paterno": "PALACIOS",
+      "dni": "20668305",
+      "dni_valido": true,
+      "edad": 63,
+      "informacion_completa": true,
+      "nombre_completo": "RONY GUSTAVO PALACIOS ZACARIAS",
+      "nombres": "RONY GUSTAVO"
+    },
+    {
+      "apellido_materno": "SANDOVAL",
+      "apellido_paterno": "PALACIOS",
+      "dni": "41067234",
+      "dni_valido": true,
+      "edad": 44,
+      "informacion_completa": true,
+      "nombre_completo": "JIMY RONY PALACIOS SANDOVAL",
+      "nombres": "JIMY RONY"
+    },
+    {
+      "apellido_materno": "PANTA",
+      "apellido_paterno": "PALACIOS",
+      "dni": "43792670",
+      "dni_valido": true,
+      "edad": 46,
+      "informacion_completa": true,
+      "nombre_completo": "ARISTIDES RONY PALACIOS PANTA",
+      "nombres": "ARISTIDES RONY"
+    },
+    {
+      "apellido_materno": "ALIAGA",
+      "apellido_paterno": "PALACIOS",
+      "dni": "48057180",
+      "dni_valido": true,
+      "edad": 32,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PASCUAL PALACIOS ALIAGA",
+      "nombres": "RONY PASCUAL"
+    },
+    {
+      "apellido_materno": "LALUPU",
+      "apellido_paterno": "PALACIOS",
+      "dni": "60998631",
+      "dni_valido": true,
+      "edad": 19,
+      "informacion_completa": true,
+      "nombre_completo": "ADRIAN JOSUE RONY PALACIOS LALUPU",
+      "nombres": "ADRIAN JOSUE RONY"
+    },
+    {
+      "apellido_materno": "DOMINGUEZ",
+      "apellido_paterno": "PALACIOS",
+      "dni": "63494895",
+      "dni_valido": true,
+      "edad": 12,
+      "informacion_completa": true,
+      "nombre_completo": "SERGIO RONY PALACIOS DOMINGUEZ",
+      "nombres": "SERGIO RONY"
+    },
+    {
+      "apellido_materno": "RODRIGUEZ",
+      "apellido_paterno": "PALACIOS",
+      "dni": "70261511",
+      "dni_valido": true,
+      "edad": 37,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ARTURO PALACIOS RODRIGUEZ",
+      "nombres": "RONY ARTURO"
+    },
+    {
+      "apellido_materno": "LALUPU",
+      "apellido_paterno": "PALACIOS",
+      "dni": "72223959",
+      "dni_valido": true,
+      "edad": 23,
+      "informacion_completa": true,
+      "nombre_completo": "RONY LUIS THEODORE PALACIOS LALUPU",
+      "nombres": "RONY LUIS THEODORE"
+    },
+    {
+      "apellido_materno": "CASIANO",
+      "apellido_paterno": "PALACIOS",
+      "dni": "72754771",
+      "dni_valido": true,
+      "edad": 19,
+      "informacion_completa": true,
+      "nombre_completo": "RONY STEFANO PALACIOS CASIANO",
+      "nombres": "RONY STEFANO"
+    },
+    {
+      "apellido_materno": "IRIGOIN",
+      "apellido_paterno": "PALACIOS",
+      "dni": "74374566",
+      "dni_valido": true,
+      "edad": 25,
+      "informacion_completa": true,
+      "nombre_completo": "RONY JHONATAN PALACIOS IRIGOIN",
+      "nombres": "RONY JHONATAN"
+    },
+    {
+      "apellido_materno": "FARFAN",
+      "apellido_paterno": "PALACIOS",
+      "dni": "74525948",
+      "dni_valido": true,
+      "edad": 30,
+      "informacion_completa": true,
+      "nombre_completo": "NADIA IRONY PALACIOS FARFAN",
+      "nombres": "NADIA IRONY"
+    },
+    {
+      "apellido_materno": "ROSAS",
+      "apellido_paterno": "PALACIOS",
+      "dni": "74571721",
+      "dni_valido": true,
+      "edad": 20,
+      "informacion_completa": true,
+      "nombre_completo": "RONY YELSEN PALACIOS ROSAS",
+      "nombres": "RONY YELSEN"
+    },
+    {
+      "apellido_materno": "RONDOY",
+      "apellido_paterno": "PALACIOS",
+      "dni": "75100431",
+      "dni_valido": true,
+      "edad": 20,
+      "informacion_completa": true,
+      "nombre_completo": "EDINSON RONY PALACIOS RONDOY",
+      "nombres": "EDINSON RONY"
+    },
+    {
+      "apellido_materno": "ARECHE",
+      "apellido_paterno": "PALACIOS",
+      "dni": "78236335",
+      "dni_valido": true,
+      "edad": 12,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALACIOS ARECHE",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "GOMEZ",
+      "apellido_paterno": "PALANTE",
+      "dni": "75888892",
+      "dni_valido": true,
+      "edad": 24,
+      "informacion_completa": true,
+      "nombre_completo": "RONY CHARLY PALANTE GOMEZ",
+      "nombres": "RONY CHARLY"
+    },
+    {
+      "apellido_materno": "LEON",
+      "apellido_paterno": "PALIAN",
+      "dni": "74241710",
+      "dni_valido": true,
+      "edad": 29,
+      "informacion_completa": true,
+      "nombre_completo": "NILTON RONY PALIAN LEON",
+      "nombres": "NILTON RONY"
+    },
+    {
+      "apellido_materno": "TEHUAY",
+      "apellido_paterno": "PALLA",
+      "dni": "80550045",
+      "dni_valido": true,
+      "edad": 48,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALLA TEHUAY",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "CACERES",
+      "apellido_paterno": "PALLARCO",
+      "dni": "77862589",
+      "dni_valido": true,
+      "edad": 13,
+      "informacion_completa": true,
+      "nombre_completo": "ROY RONY PALLARCO CACERES",
+      "nombres": "ROY RONY"
+    },
+    {
+      "apellido_materno": "PALLI",
+      "apellido_paterno": "PALLY",
+      "dni": "62098051",
+      "dni_valido": true,
+      "edad": 16,
+      "informacion_completa": true,
+      "nombre_completo": "EVELYN MARONY PALLY PALLI",
+      "nombres": "EVELYN MARONY"
+    },
+    {
+      "apellido_materno": "HUAMANI",
+      "apellido_paterno": "PALMA",
+      "dni": "42894034",
+      "dni_valido": true,
+      "edad": 41,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALMA HUAMANI",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "RUIZ",
+      "apellido_paterno": "PALMA",
+      "dni": "47552478",
+      "dni_valido": true,
+      "edad": 33,
+      "informacion_completa": true,
+      "nombre_completo": "SEGUNDO RONY PALMA RUIZ",
+      "nombres": "SEGUNDO RONY"
+    },
+    {
+      "apellido_materno": "VENTOCILLA",
+      "apellido_paterno": "PALMA",
+      "dni": "60567912",
+      "dni_valido": true,
+      "edad": 18,
+      "informacion_completa": true,
+      "nombre_completo": "RONY GUSTAVO PALMA VENTOCILLA",
+      "nombres": "RONY GUSTAVO"
+    },
+    {
+      "apellido_materno": "LEON",
+      "apellido_paterno": "PALMA",
+      "dni": "78044902",
+      "dni_valido": true,
+      "edad": 13,
+      "informacion_completa": true,
+      "nombre_completo": "CARLOS RONY PALMA LEON",
+      "nombres": "CARLOS RONY"
+    },
+    {
+      "apellido_materno": "ROBLES",
+      "apellido_paterno": "PALOMINO",
+      "dni": "09986638",
+      "dni_valido": true,
+      "edad": 50,
+      "informacion_completa": true,
+      "nombre_completo": "JORGE RONY PALOMINO ROBLES",
+      "nombres": "JORGE RONY"
+    },
+    {
+      "apellido_materno": "CARBAJAL",
+      "apellido_paterno": "PALOMINO",
+      "dni": "10528518",
+      "dni_valido": true,
+      "edad": 48,
+      "informacion_completa": true,
+      "nombre_completo": "RONY AMILCAR PALOMINO CARBAJAL",
+      "nombres": "RONY AMILCAR"
+    },
+    {
+      "apellido_materno": "PAREDES",
+      "apellido_paterno": "PALOMINO",
+      "dni": "20056724",
+      "dni_valido": true,
+      "edad": 52,
+      "informacion_completa": true,
+      "nombre_completo": "RONY WILLIAMS PALOMINO PAREDES",
+      "nombres": "RONY WILLIAMS"
+    },
+    {
+      "apellido_materno": "HERNANDEZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "21578133",
+      "dni_valido": true,
+      "edad": 47,
+      "informacion_completa": true,
+      "nombre_completo": "RONY RICHARD PALOMINO HERNANDEZ",
+      "nombres": "RONY RICHARD"
+    },
+    {
+      "apellido_materno": "ANDRES",
+      "apellido_paterno": "PALOMINO",
+      "dni": "21564407",
+      "dni_valido": true,
+      "edad": 52,
+      "informacion_completa": true,
+      "nombre_completo": "OSCAR RONY PALOMINO ANDRES",
+      "nombres": "OSCAR RONY"
+    },
+    {
+      "apellido_materno": "PARDO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "22497870",
+      "dni_valido": true,
+      "edad": 55,
+      "informacion_completa": true,
+      "nombre_completo": "KILLIAM RONY PALOMINO PARDO",
+      "nombres": "KILLIAM RONY"
+    },
+    {
+      "apellido_materno": "PADILLA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "40293610",
+      "dni_valido": true,
+      "edad": 46,
+      "informacion_completa": true,
+      "nombre_completo": "EMILIS RONY PALOMINO PADILLA",
+      "nombres": "EMILIS RONY"
+    },
+    {
+      "apellido_materno": "ACEVEDO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "40586908",
+      "dni_valido": true,
+      "edad": 45,
+      "informacion_completa": true,
+      "nombre_completo": "RONY DAVID PALOMINO ACEVEDO",
+      "nombres": "RONY DAVID"
+    },
+    {
+      "apellido_materno": "ÑAUPAS",
+      "apellido_paterno": "PALOMINO",
+      "dni": "40712004",
+      "dni_valido": true,
+      "edad": 47,
+      "informacion_completa": true,
+      "nombre_completo": "RONY FELIX PALOMINO ÑAUPAS",
+      "nombres": "RONY FELIX"
+    },
+    {
+      "apellido_materno": "RAIME",
+      "apellido_paterno": "PALOMINO",
+      "dni": "41455824",
+      "dni_valido": true,
+      "edad": 44,
+      "informacion_completa": true,
+      "nombre_completo": "RINO RONY PALOMINO RAIME",
+      "nombres": "RINO RONY"
+    },
+    {
+      "apellido_materno": "AGUIRRE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "41726043",
+      "dni_valido": true,
+      "edad": 43,
+      "informacion_completa": true,
+      "nombre_completo": "RONY MANUEL PALOMINO AGUIRRE",
+      "nombres": "RONY MANUEL"
+    },
+    {
+      "apellido_materno": "SILVA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "42503263",
+      "dni_valido": true,
+      "edad": 43,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO SILVA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "CCACCYA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "42995071",
+      "dni_valido": true,
+      "edad": 42,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO CCACCYA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "ALLCCA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "43229087",
+      "dni_valido": true,
+      "edad": 40,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO ALLCCA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "ARECHE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "43572479",
+      "dni_valido": true,
+      "edad": 39,
+      "informacion_completa": true,
+      "nombre_completo": "RONY DANIEL PALOMINO ARECHE",
+      "nombres": "RONY DANIEL"
+    },
+    {
+      "apellido_materno": "PEREZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "43873558",
+      "dni_valido": true,
+      "edad": 39,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ANGEL PALOMINO PEREZ",
+      "nombres": "RONY ANGEL"
+    },
+    {
+      "apellido_materno": "POMAHUALLCA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "43972036",
+      "dni_valido": true,
+      "edad": 39,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ROBERT PALOMINO POMAHUALLCA",
+      "nombres": "RONY ROBERT"
+    },
+    {
+      "apellido_materno": "PEDRAZA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "44048264",
+      "dni_valido": true,
+      "edad": 39,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO PEDRAZA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "ANGULO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "44536484",
+      "dni_valido": true,
+      "edad": 39,
+      "informacion_completa": true,
+      "nombre_completo": "RONY SANTIAGO PALOMINO ANGULO",
+      "nombres": "RONY SANTIAGO"
+    },
+    {
+      "apellido_materno": "USTUA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "45060434",
+      "dni_valido": true,
+      "edad": 43,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO USTUA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "TORRES",
+      "apellido_paterno": "PALOMINO",
+      "dni": "45189025",
+      "dni_valido": true,
+      "edad": 37,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ORLIN PALOMINO TORRES",
+      "nombres": "RONY ORLIN"
+    },
+    {
+      "apellido_materno": "GONZALEZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "46140598",
+      "dni_valido": true,
+      "edad": 36,
+      "informacion_completa": true,
+      "nombre_completo": "IVAN RONY PALOMINO GONZALEZ",
+      "nombres": "IVAN RONY"
+    },
+    {
+      "apellido_materno": "YUPANQUI",
+      "apellido_paterno": "PALOMINO",
+      "dni": "46325239",
+      "dni_valido": true,
+      "edad": 35,
+      "informacion_completa": true,
+      "nombre_completo": "RONY GEYSON PALOMINO YUPANQUI",
+      "nombres": "RONY GEYSON"
+    },
+    {
+      "apellido_materno": "MONTES",
+      "apellido_paterno": "PALOMINO",
+      "dni": "48825955",
+      "dni_valido": true,
+      "edad": 41,
+      "informacion_completa": true,
+      "nombre_completo": "MIKE RONY PALOMINO MONTES",
+      "nombres": "MIKE RONY"
+    },
+    {
+      "apellido_materno": "CONDORI",
+      "apellido_paterno": "PALOMINO",
+      "dni": "60068068",
+      "dni_valido": true,
+      "edad": 19,
+      "informacion_completa": true,
+      "nombre_completo": "RONY DANGER PALOMINO CONDORI",
+      "nombres": "RONY DANGER"
+    },
+    {
+      "apellido_materno": "CASTRO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "60145910",
+      "dni_valido": true,
+      "edad": 17,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO CASTRO",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "MULATO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "60239681",
+      "dni_valido": true,
+      "edad": 17,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO MULATO",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "GONZALES",
+      "apellido_paterno": "PALOMINO",
+      "dni": "60657201",
+      "dni_valido": true,
+      "edad": 17,
+      "informacion_completa": true,
+      "nombre_completo": "RONY DAVID PALOMINO GONZALES",
+      "nombres": "RONY DAVID"
+    },
+    {
+      "apellido_materno": "EGUREN",
+      "apellido_paterno": "PALOMINO",
+      "dni": "61006503",
+      "dni_valido": true,
+      "edad": 31,
+      "informacion_completa": true,
+      "nombre_completo": "RONY JAVIER PALOMINO EGUREN",
+      "nombres": "RONY JAVIER"
+    },
+    {
+      "apellido_materno": "MELLADO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "61620325",
+      "dni_valido": true,
+      "edad": 32,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO MELLADO",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "SANCHEZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "62126872",
+      "dni_valido": true,
+      "edad": 19,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ANDERSON PALOMINO SANCHEZ",
+      "nombres": "RONY ANDERSON"
+    },
+    {
+      "apellido_materno": "PEÑA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "62040573",
+      "dni_valido": true,
+      "edad": 17,
+      "informacion_completa": true,
+      "nombre_completo": "RONY MELVIN PALOMINO PEÑA",
+      "nombres": "RONY MELVIN"
+    },
+    {
+      "apellido_materno": "QUISPE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "62260730",
+      "dni_valido": true,
+      "edad": 20,
+      "informacion_completa": true,
+      "nombre_completo": "RONY FRANCO PALOMINO QUISPE",
+      "nombres": "RONY FRANCO"
+    },
+    {
+      "apellido_materno": "VILLAFUERTE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "63182290",
+      "dni_valido": true,
+      "edad": 14,
+      "informacion_completa": true,
+      "nombre_completo": "RONY MARCELINO PALOMINO VILLAFUERTE",
+      "nombres": "RONY MARCELINO"
+    },
+    {
+      "apellido_materno": "SALAS",
+      "apellido_paterno": "PALOMINO",
+      "dni": "63276680",
+      "dni_valido": true,
+      "edad": 14,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO SALAS",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "GOMEZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "70290808",
+      "dni_valido": true,
+      "edad": 29,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO GOMEZ",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "BEJAR",
+      "apellido_paterno": "PALOMINO",
+      "dni": "70362975",
+      "dni_valido": true,
+      "edad": 31,
+      "informacion_completa": true,
+      "nombre_completo": "RONY CRISTIAN PALOMINO BEJAR",
+      "nombres": "RONY CRISTIAN"
+    },
+    {
+      "apellido_materno": "VALLEJOS",
+      "apellido_paterno": "PALOMINO",
+      "dni": "70431721",
+      "dni_valido": true,
+      "edad": 29,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO VALLEJOS",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "ESCALANTE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "70569945",
+      "dni_valido": true,
+      "edad": 26,
+      "informacion_completa": true,
+      "nombre_completo": "RONYE MIGUEL PALOMINO ESCALANTE",
+      "nombres": "RONYE MIGUEL"
+    },
+    {
+      "apellido_materno": "BAUTISTA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "70754841",
+      "dni_valido": true,
+      "edad": 20,
+      "informacion_completa": true,
+      "nombre_completo": "RONY JHONATAN PALOMINO BAUTISTA",
+      "nombres": "RONY JHONATAN"
+    },
+    {
+      "apellido_materno": "CONDORI",
+      "apellido_paterno": "PALOMINO",
+      "dni": "71247345",
+      "dni_valido": true,
+      "edad": 32,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO CONDORI",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "RODRIGUEZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "71813539",
+      "dni_valido": true,
+      "edad": 27,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ROYER PALOMINO RODRIGUEZ",
+      "nombres": "RONY ROYER"
+    },
+    {
+      "apellido_materno": "GAVILAN",
+      "apellido_paterno": "PALOMINO",
+      "dni": "71906311",
+      "dni_valido": true,
+      "edad": 22,
+      "informacion_completa": true,
+      "nombre_completo": "RONY INTI PALOMINO GAVILAN",
+      "nombres": "RONY INTI"
+    },
+    {
+      "apellido_materno": "ABREGU",
+      "apellido_paterno": "PALOMINO",
+      "dni": "71895949",
+      "dni_valido": true,
+      "edad": 22,
+      "informacion_completa": true,
+      "nombre_completo": "MAYCOL RONY PALOMINO ABREGU",
+      "nombres": "MAYCOL RONY"
+    },
+    {
+      "apellido_materno": "CHACHAIMA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "72404678",
+      "dni_valido": true,
+      "edad": 32,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO CHACHAIMA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "ACEVEDO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "73261145",
+      "dni_valido": true,
+      "edad": 28,
+      "informacion_completa": true,
+      "nombre_completo": "RONY OSCAR PALOMINO ACEVEDO",
+      "nombres": "RONY OSCAR"
+    },
+    {
+      "apellido_materno": "PARIONA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "73345301",
+      "dni_valido": true,
+      "edad": 21,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO PARIONA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "GOMEZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "73498388",
+      "dni_valido": true,
+      "edad": 21,
+      "informacion_completa": true,
+      "nombre_completo": "RONY CLINTON PALOMINO GOMEZ",
+      "nombres": "RONY CLINTON"
+    },
+    {
+      "apellido_materno": "MUÑOZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "73541249",
+      "dni_valido": true,
+      "edad": 21,
+      "informacion_completa": true,
+      "nombre_completo": "RONY MAYKOL PALOMINO MUÑOZ",
+      "nombres": "RONY MAYKOL"
+    },
+    {
+      "apellido_materno": "CCAPCHA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "74880852",
+      "dni_valido": true,
+      "edad": 26,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO CCAPCHA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "VARGAS",
+      "apellido_paterno": "PALOMINO",
+      "dni": "75105292",
+      "dni_valido": true,
+      "edad": 30,
+      "informacion_completa": true,
+      "nombre_completo": "RONY JHORDINE PALOMINO VARGAS",
+      "nombres": "RONY JHORDINE"
+    },
+    {
+      "apellido_materno": "CHAVEZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "75362645",
+      "dni_valido": true,
+      "edad": 27,
+      "informacion_completa": true,
+      "nombre_completo": "ORLANDO RONY PALOMINO CHAVEZ",
+      "nombres": "ORLANDO RONY"
+    },
+    {
+      "apellido_materno": "RAMIREZ",
+      "apellido_paterno": "PALOMINO",
+      "dni": "75756588",
+      "dni_valido": true,
+      "edad": 25,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO RAMIREZ",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "LECARNAQUE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "75748500",
+      "dni_valido": true,
+      "edad": 28,
+      "informacion_completa": true,
+      "nombre_completo": "JOHN BRONY PALOMINO LECARNAQUE",
+      "nombres": "JOHN BRONY"
+    },
+    {
+      "apellido_materno": "PADILLA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "76154018",
+      "dni_valido": true,
+      "edad": 25,
+      "informacion_completa": true,
+      "nombre_completo": "ANYHELA RONY PALOMINO PADILLA",
+      "nombres": "ANYHELA RONY"
+    },
+    {
+      "apellido_materno": "TOALA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "76455817",
+      "dni_valido": true,
+      "edad": 30,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ARNOL PALOMINO TOALA",
+      "nombres": "RONY ARNOL"
+    },
+    {
+      "apellido_materno": "CCANA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "76294135",
+      "dni_valido": true,
+      "edad": 27,
+      "informacion_completa": true,
+      "nombre_completo": "RONY DARWIN PALOMINO CCANA",
+      "nombres": "RONY DARWIN"
+    },
+    {
+      "apellido_materno": "MANRIQUE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "76699700",
+      "dni_valido": true,
+      "edad": 23,
+      "informacion_completa": true,
+      "nombre_completo": "JOEL RONY PALOMINO MANRIQUE",
+      "nombres": "JOEL RONY"
+    },
+    {
+      "apellido_materno": "QUISPE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "76849424",
+      "dni_valido": true,
+      "edad": 26,
+      "informacion_completa": true,
+      "nombre_completo": "RONY YIMY PALOMINO QUISPE",
+      "nombres": "RONY YIMY"
+    },
+    {
+      "apellido_materno": "MOLINA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "77040520",
+      "dni_valido": true,
+      "edad": 30,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO MOLINA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "CCORAHUA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "77924540",
+      "dni_valido": true,
+      "edad": 29,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO CCORAHUA",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "SARAVIA",
+      "apellido_paterno": "PALOMINO",
+      "dni": "78158998",
+      "dni_valido": true,
+      "edad": 12,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ALESSANDRO PALOMINO SARAVIA",
+      "nombres": "RONY ALESSANDRO"
+    },
+    {
+      "apellido_materno": "BENITES",
+      "apellido_paterno": "PALOMINO",
+      "dni": "78588147",
+      "dni_valido": true,
+      "edad": 12,
+      "informacion_completa": true,
+      "nombre_completo": "RONY KINEDEX PALOMINO BENITES",
+      "nombres": "RONY KINEDEX"
+    },
+    {
+      "apellido_materno": "CABEZAS",
+      "apellido_paterno": "PALOMINO",
+      "dni": "79228100",
+      "dni_valido": true,
+      "edad": 10,
+      "informacion_completa": true,
+      "nombre_completo": "RONY MARCELO PALOMINO CABEZAS",
+      "nombres": "RONY MARCELO"
+    },
+    {
+      "apellido_materno": "MANRIQUE",
+      "apellido_paterno": "PALOMINO",
+      "dni": "80298640",
+      "dni_valido": true,
+      "edad": 46,
+      "informacion_completa": true,
+      "nombre_completo": "RONY JUVENAL PALOMINO MANRIQUE",
+      "nombres": "RONY JUVENAL"
+    },
+    {
+      "apellido_materno": "CONTRERAS",
+      "apellido_paterno": "PALOMINO",
+      "dni": "90540116",
+      "dni_valido": true,
+      "edad": 8,
+      "informacion_completa": true,
+      "nombre_completo": "RONY VALENTINO PALOMINO CONTRERAS",
+      "nombres": "RONY VALENTINO"
+    },
+    {
+      "apellido_materno": "JURO",
+      "apellido_paterno": "PALOMINO",
+      "dni": "31032985",
+      "dni_valido": true,
+      "edad": 55,
+      "informacion_completa": true,
+      "nombre_completo": "RONY PALOMINO JURO",
+      "nombres": "RONY"
+    },
+    {
+      "apellido_materno": "ARCOS",
+      "apellido_paterno": "PALPA",
+      "dni": "10181449",
+      "dni_valido": true,
+      "edad": 50,
+      "informacion_completa": true,
+      "nombre_completo": "RONY ARTURO PALPA ARCOS",
+      "nombres": "RONY ARTURO"
+    }
+  ],
+  "mensaje": "Búsqueda exitosa",
+  "parametros_usados": 2,
+  "resumen": {
+    "dnis_validos": 94,
+    "edades": {
+      "maxima": 63,
+      "minima": 8,
+      "promedio": 31.1
+    },
+    "informacion_completa": 94,
+    "personas_encontradas": 94
+  },
+  "status": "success",
+  "total_personas": 94
+}

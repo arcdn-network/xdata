@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CERTIFICADO</title>
+   <style>
+      body {
+         margin: 0;
+         background: #1e1e1e;
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         font-family: Arial, sans-serif;
+         font-size: 16px;
+         min-height: 100vh;
+         box-sizing: border-box;
+      }
+
+      .page {
+         width: 960px;
+         position: relative;
+         height: calc(960px * 5846 / 4134);
+         background: url('../images/antecedentes/penales.png') no-repeat center/100% 100%;
+         background-color: #fff;
+      }
+
+      .bloque {
+         position: absolute;
+         white-space: pre;
+         color: #000;
+      }
+
+      /* 1. FOTO */
+      #foto-container {
+         position: absolute;
+         top: 9%;
+         left: 79.4%;
+         width: 15%;
+         height: 14%;
+         overflow: hidden;
+         border: 3px solid #841212;
+      }
+
+      #foto-container img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      #foto-container {
+         position: absolute;
+         top: 9%;
+         left: 79.4%;
+         width: 15%;
+         height: 14%;
+         overflow: hidden;
+         border: 3px solid #841212;
+      }
+
+      #foto-container img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+
+      /* WATERMARK BASE */
+      .wm {
+         position: absolute;
+         color: rgba(150, 150, 150, 0.5);
+         font-weight: bold;
+         pointer-events: none;
+         white-space: nowrap;
+      }
+
+      .wm-top {
+         top: 3%;
+         left: 50%;
+         transform: translateX(-50%);
+         font-size: 14px;
+      }
+
+      .wm-diagonal {
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%) rotate(35deg);
+         font-size: 22px;
+         text-align: center;
+         line-height: 20px;
+      }
+
+      .text-red {
+         color: rgba(255, 0, 0, 0.35);
+         font-size: 18px;
+         letter-spacing: 1px;
+      }
+
+      .vertical {
+         writing-mode: vertical-rl;
+         text-orientation: mixed;
+         transform: rotate(180deg);
+         top: 5%;
+         font-size: 9px;
+      }
+
+      .wm-right {
+         right: 2px;
+      }
+
+
+      /* 2. APELLIDO 1 */
+      #b-apellido1 {
+         top: 31.1%;
+         left: 8.7%;
+         width: 21%;
+         text-align: center;
+      }
+
+      /* 3. APELLIDO 2 */
+      #b-apellido2 {
+         top: 31.1%;
+         left: 32.9%;
+         width: 21%;
+         text-align: center;
+      }
+
+      /* 4. NOMBRE */
+      #b-nombre {
+         top: 31.1%;
+         left: 57.25%;
+         width: 35%;
+         text-align: center;
+      }
+
+      /* 5. DNI */
+      #b-dni {
+         top: 36.75%;
+         left: 26%;
+      }
+
+      /* 6. TEXTO RANDOM */
+      #b-texto-random {
+         top: 36.75%;
+         right: 26%
+      }
+
+      /* 7. BLOQUE IZQUIERDO */
+      #b-bloque-izq {
+         top: 80.7%;
+         left: 18%;
+         line-height: 2.35;
+      }
+
+      /* 8. BLOQUE DERECHO */
+      #b-bloque-der {
+         top: 80.7%;
+         right: 9.5%;
+         line-height: 2.35;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="page">
+
+      <!-- 1. FOTO -->
+      <div id="foto-container">
+         <img id="img-foto" src="" alt="foto">
+         <div class="wm wm-top"></div>
+         <div class="wm wm-diagonal"></div>
+         <div class="wm wm-right vertical"></div>
+      </div>
+
+      <!-- 2. APELLIDO 1 -->
+      <div id="b-apellido1" class="bloque"></div>
+
+      <!-- 3. APELLIDO 2 -->
+      <div id="b-apellido2" class="bloque"></div>
+
+      <!-- 4. NOMBRE -->
+      <div id="b-nombre" class="bloque"></div>
+
+      <!-- 5. DNI -->
+      <div id="b-dni" class="bloque"></div>
+
+      <!-- 6. TEXTO RANDOM -->
+      <div id="b-texto-random" class="bloque"></div>
+
+      <!-- 7. BLOQUE IZQUIERDO -->
+      <div id="b-bloque-izq" class="bloque"></div>
+
+      <!-- 8. BLOQUE DERECHO -->
+      <div id="b-bloque-der" class="bloque"></div>
+
+   </div>
+
+   <script>
+
+      function formatFecha(val) {
+         if (!val) return '';
+         const d = new Date(val);
+         const pad = n => n.toString().padStart(2, '0');
+         return `${pad(d.getDate())}/${pad(d.getMonth() + 1)}/${d.getFullYear()}`;
+      }
+
+      function formatHora(val) {
+         if (!val) return '';
+         const d = new Date(val);
+         const pad = n => n.toString().padStart(2, '0');
+         return `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+      }
+
+      function formatMonto(valor) {
+         if (valor === undefined || valor === null) return '';
+         return `S/. ${parseFloat(valor).toFixed(2).replace('.', ',')}`;
+      }
+
+      function fechaHoraActual() {
+         const f = new Date();
+         const pad = n => n.toString().padStart(2, "0");
+         return `${pad(f.getDate())}-${pad(f.getMonth() + 1)}-${f.getFullYear()} ${pad(f.getHours())}:${pad(f.getMinutes())}:${pad(f.getSeconds())}`;
+      }
+
+      function sumarMeses(fecha, meses) {
+         const d = new Date(fecha);
+         d.setMonth(d.getMonth() + meses);
+         const pad = n => n.toString().padStart(2, '0');
+         return `${pad(d.getDate())}/${pad(d.getMonth() + 1)}/${d.getFullYear()}`;
+      }
+
+      window.renderFromData = function (raw) {
+         if (!raw) return;
+         const d = Array.isArray(raw.listaAni) ? raw.listaAni[0] : raw.listaAni;
+
+         // Foto
+         const foto = document.getElementById('img-foto');
+         document.querySelector('.wm-top').textContent = "PJ";
+         document.querySelector('.wm-diagonal').innerHTML =
+            `RENIEC@${new Date().getFullYear()}<br><span class="text-red">${d.nuDni}</span>`;
+         document.querySelector('.wm-right').textContent = fechaHoraActual();
+
+         if (raw.foto) {
+            foto.src = raw.foto.startsWith('data:') ? raw.foto : `data:image/jpeg;base64,${raw.foto}`;
+         }
+
+         // Datos personales
+         document.getElementById('b-apellido1').textContent = d.apePaterno ?? '';
+         document.getElementById('b-apellido2').textContent = d.apeMaterno ?? '';
+         document.getElementById('b-nombre').textContent = d.preNombres ?? '';
+         document.getElementById('b-dni').textContent = d.nuDni ?? '';
+         document.getElementById('b-texto-random').textContent = 'TRAMITE ADMINISTRATIVO';
+
+         const ahora = new Date();
+
+         // Bloque izquierdo: N° TASA | FECHA PAGO | HORA | VALOR
+         document.getElementById('b-bloque-izq').textContent = [
+            '63283',
+            formatFecha(ahora),
+            formatHora(ahora),
+            'S/. 52,80'
+         ].join('\n');
+
+         // Bloque derecho: OPERADOR | EXPEDIDO | HORA | CADUCA
+         document.getElementById('b-bloque-der').textContent = [
+            'USRPCAP',
+            formatFecha(ahora),
+            formatHora(ahora),
+            sumarMeses(ahora, 3),
+         ].join('\n');
+      };
+
+      async function init() {
+         try {
+            const res = await fetch("../test/reniec.json");
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            renderFromData(data);
+         } catch (err) {
+            console.error(err);
+         }
+      }
+
+      init();
+   </script>
+
+</body>
+
+</html>

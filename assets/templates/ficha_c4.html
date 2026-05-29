@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ficha C4</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      html,
+      body {
+         width: 100%;
+         min-height: 100vh;
+         background: #d6d6d6;
+         font-family: Arial, sans-serif;
+         font-size: 11px;
+         color: #000;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         padding: 24px 0 40px;
+      }
+
+      /* ── Hoja A4 como columna para que el copyright quede al fondo ── */
+      .page {
+         width: 210mm;
+         min-height: 297mm;
+         background: #fff;
+         padding: 14mm 14mm 10mm 14mm;
+         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.28);
+         display: flex;
+         flex-direction: column;
+      }
+
+      /* ocupa todo el espacio disponible, empujando el copyright abajo */
+      .page-body {
+         flex: 1;
+      }
+
+      /* ── HEADER ── */
+      .header {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         border-bottom: 2px solid #000;
+         padding-bottom: 20px;
+         margin-bottom: 20px;
+      }
+
+      .header img.logo {
+         width: 150px;
+      }
+
+      .header-title {
+         flex: 1;
+         text-align: center;
+      }
+
+      .header-title h1 {
+         font-size: 14px;
+         font-weight: bold;
+         line-height: 1.5;
+         text-transform: uppercase;
+         margin-top: 1rem;
+      }
+
+      .subtitle {
+         font-size: 12px;
+         font-weight: bold;
+      }
+
+      /* ── LAYOUT ── */
+      .main {
+         display: table;
+         width: 100%;
+         table-layout: fixed;
+         padding: 0 10mm;
+      }
+
+      .col-datos {
+         display: table-cell;
+         width: 66%;
+         vertical-align: top;
+         padding-right: 6px;
+      }
+
+      .col-bio {
+         display: table-cell;
+         width: 34%;
+         vertical-align: top;
+         padding-left: 4px;
+      }
+
+      /* ── FILAS ── */
+      .fila {
+         display: flex;
+         padding: 2.5px 0;
+      }
+
+      .etiqueta {
+         font-weight: bold;
+         font-size: 12px;
+         min-width: 155px;
+         width: 155px;
+         flex-shrink: 0;
+      }
+
+      .valor {
+         font-size: 12px;
+         padding-left: 8px;
+      }
+
+      /* ── BIOMETRÍA ── */
+      .bio-item {
+         text-align: center;
+         margin-bottom: 40px;
+      }
+
+      .bio-label {
+         font-size: 9px;
+         font-weight: bold;
+         margin-bottom: 2px;
+      }
+
+      .bio-box {
+         margin: 0 auto;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         overflow: hidden;
+      }
+
+      .bio-box img {
+         display: block;
+         max-width: 100%;
+         max-height: 100%;
+         object-fit: contain;
+      }
+
+      .box-foto {
+         width: 100px;
+         height: 140px;
+      }
+
+      .box-firma {
+         width: 100px;
+         height: 60px;
+      }
+
+      .box-huella {
+         width: 100px;
+         height: 100px;
+      }
+
+      /* ── FOOTER ── */
+      .footer-info {
+         margin-top: 14px;
+         padding: 5px 20mm 0;
+      }
+
+      .footer-fila {
+         display: flex;
+         padding: 1.5px 0;
+      }
+
+      .footer-label {
+         font-weight: bold;
+         font-size: 12px;
+         min-width: 155px;
+         width: 155px;
+         flex-shrink: 0;
+      }
+
+      .footer-valor {
+         font-size: 12px;
+         padding-left: 8px;
+      }
+
+      /* ── COPYRIGHT — siempre al fondo de la hoja ── */
+      .copyright {
+         text-align: center;
+         margin-top: 18px;
+         font-size: 11px;
+         padding-top: 5px;
+         font-weight: bold;
+      }
+
+      #estado {
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background: rgba(0, 0, 0, 0.75);
+         color: #fff;
+         padding: 14px 28px;
+         border-radius: 8px;
+         font-size: 13px;
+         z-index: 999;
+         display: none;
+      }
+
+      @media print {
+
+         html,
+         body {
+            background: #fff;
+            padding: 0;
+         }
+
+         .page {
+            box-shadow: none;
+            margin: 0;
+            padding: 10mm;
+         }
+
+         #estado {
+            display: none !important;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <div id="estado">Cargando datos...</div>
+
+   <div class="page">
+
+      <div class="page-body">
+
+         <!-- HEADER -->
+         <div class="header">
+            <div>
+               <img class="logo" src="../images/logo_reniec.png" alt="RENIEC">
+               <div class="subtitle">Informe de la Consulta</div>
+            </div>
+            <div class="header-title">
+               <h1>Registro Nacional de Identificación y Estado Civil<br>Servicio de Consultas en Línea</h1>
+            </div>
+         </div>
+
+         <!-- CUERPO -->
+         <div class="main">
+            <div class="col-datos" id="col-datos"></div>
+            <div class="col-bio">
+               <div class="bio-item">
+                  <div class="bio-label">Foto del Ciudadano</div>
+                  <div class="bio-box box-foto"><img id="img-foto" src="" alt="Foto"></div>
+               </div>
+               <div class="bio-item">
+                  <div class="bio-label">Firma del Ciudadano</div>
+                  <div class="bio-box box-firma"><img id="img-firma" src="" alt="Firma"></div>
+               </div>
+               <div class="bio-item">
+                  <div class="bio-label">Huella Izquierda</div>
+                  <div class="bio-box box-huella"><img id="img-hizquierda" src="" alt="Huella Izquierda"></div>
+               </div>
+               <div class="bio-item">
+                  <div class="bio-label">Huella Derecha</div>
+                  <div class="bio-box box-huella"><img id="img-hderecha" src="" alt="Huella Derecha"></div>
+               </div>
+            </div>
+         </div>
+
+         <!-- QR -->
+         <div style="text-align: right; padding-right: 10mm; margin-top: 6px;">
+            <img
+               src="https://api.qrserver.com/v1/create-qr-code/?size=75x75&data=https://serviciosportal.reniec.gob.pe/verificacionqr/" />
+         </div>
+
+         <!-- FOOTER -->
+         <div class="footer-info" id="footer-info"></div>
+
+      </div><!-- /page-body -->
+
+      <!-- COPYRIGHT siempre al fondo -->
+      <div class="copyright" id="copyright"></div>
+
+   </div>
+
+   <script>
+      function nroTransaccion() {
+         return String(Math.floor(Math.random() * 900000000) + 100000000);
+      }
+
+      function fechaHoy() {
+         const h = new Date();
+         const dd = String(h.getDate()).padStart(2, '0');
+         const mm = String(h.getMonth() + 1).padStart(2, '0');
+         const yyyy = h.getFullYear();
+         return `${dd}/${mm}/${yyyy}`;
+      }
+
+      document.getElementById('copyright').textContent =
+         `Registro Nacional de Identificación y Estado Civil - RENIEC© ${new Date().getFullYear()}`;
+
+      function setImg(id, b64, mime) {
+         if (!b64) return;
+         document.getElementById(id).src =
+            b64.startsWith("data:") ? b64 : `data:${mime};base64,${b64}`;
+      }
+
+      function render(raw) {
+         const d = Array.isArray(raw.listaAni) ? raw.listaAni[0] : raw.listaAni;
+
+         const campos = [
+            { lbl: "CUI:", val: `${d.nuDni}-${d.digitoVerificacion}` },
+            { lbl: "Apellido Paterno:", val: d.apePaterno },
+            { lbl: "Apellido Materno:", val: d.apeMaterno },
+            { lbl: "Nombres:", val: d.preNombres },
+            { lbl: "Sexo:", val: d.sexo },
+            { lbl: "Fecha de Nacimiento:", val: d.feNacimiento },
+            { lbl: "Departamento de Nacimiento:", val: d.departamento },
+            { lbl: "Provincia de Nacimiento:", val: d.provincia },
+            { lbl: "Distrito de Nacimiento:", val: d.distrito },
+            { lbl: "Grado de Instrucción:", val: d.gradoInstruccion },
+            { lbl: "Estado Civil:", val: d.estadoCivil },
+            { lbl: "Estatura:", val: d.estatura },
+            { lbl: "Fecha de Inscripción:", val: d.feInscripcion },
+            { lbl: "Nombre del Padre:", val: d.nomPadre || "-" },
+            { lbl: "Nombre de la Madre:", val: d.nomMadre || "-" },
+            { lbl: "Fecha de Emisión:", val: d.feEmision },
+            { lbl: "Restricción:", val: d.deRestriccion },
+            { lbl: "Departamento de Domicilio:", val: d.depaDireccion },
+            { lbl: "Provincia de Domicilio:", val: d.provDireccion },
+            { lbl: "Distrito de Domicilio:", val: d.distDireccion },
+            { lbl: "Dirección:", val: d.desDireccion },
+            { lbl: "Fecha de Caducidad:", val: d.feCaducidad },
+            { lbl: "Fecha de Fallecimiento:", val: d.feFallecimiento || "-" },
+            { lbl: "Glosa Informativa:", val: "-" },
+            { lbl: "Observación:", val: d.donaOrganos || "NO" },
+         ];
+
+         const colDatos = document.getElementById("col-datos");
+         campos.forEach(({ lbl, val }) => {
+            const row = document.createElement("div");
+            row.className = "fila";
+            row.innerHTML = `<span class="etiqueta">${lbl}</span><span class="valor">${val}</span>`;
+            colDatos.appendChild(row);
+         });
+
+         setImg("img-foto", raw.foto, "image/jpeg");
+         setImg("img-firma", raw.firma, "image/png");
+         setImg("img-hizquierda", raw.hizquierda, "image/png");
+         setImg("img-hderecha", raw.hderecha, "image/png");
+
+         const footerItems = [
+            { lbl: "Usuario:", val: "ADMINISTRACION RENIEC" },
+            { lbl: "Fecha de Transacción:", val: fechaHoy() },
+            { lbl: "Entidad:", val: "RENIEC" },
+            { lbl: "Número de Transacción:", val: nroTransaccion() },
+         ];
+
+         const footer = document.getElementById("footer-info");
+         footerItems.forEach(({ lbl, val }) => {
+            const row = document.createElement("div");
+            row.className = "footer-fila";
+            row.innerHTML = `<span class="footer-label">${lbl}</span><span class="footer-valor">${val}</span>`;
+            footer.appendChild(row);
+         });
+      }
+
+      window.renderFromData = async function (raw) {
+         document.getElementById('estado').style.display = 'none';
+         render(raw);
+      };
+
+      document.addEventListener('DOMContentLoaded', () => {
+         fetch("../test/reniec.json")
+            .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+            .then(raw => window.renderFromData(raw))
+            .catch(err => {
+               const el = document.getElementById("estado");
+               el.textContent = "❌ No se pudo cargar reniec.json — " + err.message;
+               el.style.display = "block";
+            });
+      });
+   </script>
+</body>
+
+</html>
