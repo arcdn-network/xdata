@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 // START SERVER
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4002;
 app.listen(PORT, () => {
   const isProd = IS_PRODUCCION;
 
